@@ -6,21 +6,35 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Задача 1</h1>
+    <h1>задание1</h1>
     <?php
-    $startNum = 3;
-    $mult = 2;
-    $quant = 6;
-
-    $num = $startNum;
-    for ($i = 0; $i < $quant; $i++)
-        {
-            echo ($num = $num * $mult), "<br>";
-            
-        }
-    echo "startNum: ", $startNum, " mult: ", " quant: ", $quant, "<br>";
+    $numA = 6;
+    $numB = 4;
+    if ($numA < $numB):
+        echo($numA+$numB);
+    else:
+        echo($numA*$numB);
+    endif;
     ?>
-    <h1>Задача 2</h1>
-    
+
+    <h1>задание2</h1>
+    <?php
+    $n = 65;
+    echo $n, "<br>";
+    if ($n%2 == 0):
+        echo("четное");
+    else:
+        echo("нечетное");
+    endif;
+    ?>
+
+    <h1>задание3</h1>
+    <?php
+    $sum = 1322;
+    if ($sum > 1000):
+        $total = $sum - (($sum/100)*10);
+    else:
+        $total = $sum - (($sum/100)*5);
+    ?>
 </body>
 </html>
